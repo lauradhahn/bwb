@@ -1,0 +1,686 @@
+/*
+Theme Name: BwB
+Theme URI: http://www.laurahahn.com/
+Description: A custom theme by Laura Hahn
+Version: 1.0
+Author: Laura Hahn
+Author URI: http://www.laurahahn.com
+*/
+
+/* default wordpress image alignments */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.alignright {
+  float: right;
+  margin-left: 15px;
+}
+.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+
+/* custom styles */
+
+/* global */
+body {
+  behavior: url('csshover3.htc');
+  /* font-family: Lucida Grande,Verdana,Helvetica,Arial,sans-serif; */
+  font-family: "Droid Sans",Lucida Grande,Verdana,Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+p {
+  font-size: 14px;
+  line-height: 24px;
+}
+a {
+  color: #5ebfb4;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: #5ebfb4;
+  text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+h2 {
+  margin-bottom: 20px;	
+}
+.ad {
+  background-image: url("images/stripe.png");
+  padding: 10px 0 20px 0;
+  text-align: center;
+}
+.ad h4 {
+  color: #999;
+  margin-bottom: 10px;
+}
+.ad-unit {
+  margin-bottom: 20px;
+}
+.btn {
+  margin-bottom: 20px;
+}
+.btn a,
+.btn a:hover {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.pagination span,
+.pagination a {
+  float: left;
+  padding: 0 14px;
+  line-height: 34px;
+  text-decoration: none;
+  border: none;
+}
+.pagination a:hover {
+  color: #322b21;	
+}
+.pagination .current {
+  background-color: #5ebfb4; 
+  color: #fff;
+  cursor: default;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+code {
+ border: none;
+ color: #999;
+ font-family: Courier, serif;
+ padding: 0;
+}
+
+/* .social-media-links */
+.social-media-links li {
+  background-image: url("images/icons-32.png");
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  height: 32px;
+  margin: 4px 4px 0 0;
+  padding: 0;
+  width: 32px;
+}
+.social-media-links .facebook {
+  background-position: 0 0;  	
+}
+.social-media-links .facebook:hover {
+  background-position: 0 -160px;  	
+}
+.social-media-links .twitter {
+  background-position: 0 -32px;  	
+}
+.social-media-links .twitter:hover {
+  background-position: 0 -192px;  	
+}
+.social-media-links .pinterest {
+  background-position: 0 -64px;  	
+}
+.social-media-links .pinterest:hover {
+  background-position: 0 -224px;  	
+}
+.social-media-links .flickr {
+  background-position: 0 -96px;  	
+}
+.social-media-links .flickr:hover {
+  background-position: 0 -256px;  	
+}
+.social-media-links .rss {
+  background-position: 0 -128px;  	
+}
+.social-media-links .rss:hover {
+  background-position: 0 -288px;  	
+}
+
+/* search submit */
+input#searchsubmit {
+  background-color: #8adcd3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  border: none;
+  -webkit-box-shadow: 0 4px 0 0 #5EBFB4;
+     -moz-box-shadow: 0 4px 0 0 #5ebfb4;
+          box-shadow: 0 4px 0 0 #5EBFB4;
+  color: white;
+  cursor: pointer;
+  font-family: "Droid Sans",Lucida Grande,Verdana,Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 18px;
+  padding: 4px 10px 4px;
+  text-align: center;
+  text-shadow: 0 -0.1em #5ebfb4;
+  vertical-align: middle;	
+}
+input#searchsubmit:hover {
+  color: #f7f7f7;
+  text-decoration: none;
+  background-color: #81d6cd;
+  *background-color: #81d6cd;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+  background-position: 0 -15px;
+  -webkit-box-shadow: 0 3px 0 0 #5ebfb4;
+     -moz-box-shadow: 0 3px 0 0 #5ebfb4;
+          box-shadow: 0 3px 0 0 #5ebfb4;
+}
+
+/* .global-header */
+.global-header {
+  margin-bottom: 40px;
+  min-height: 160px;
+}
+.navbar-inner {
+  background-color: #8adcd3;
+  height:40px;
+}
+
+/* .nav-utility */
+.nav-utility .utility-links {
+  float: right;
+}
+.nav-utility .utility-links li a {
+  color: #fff;
+  font-size: 12px;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+.nav-utility .utility-links li a:hover {
+  text-decoration: underline;
+}
+.nav-utility .utility-links form {
+  margin: 0;
+  padding-top: 2px;
+}
+.nav-utility .utility-links form label {
+  display: none;
+}
+.nav-utility .utility-links form input#searchsubmit {
+  color: #fff;
+  font-weight: bold;
+  background-color: #abeae3;
+  border: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;	
+}
+.nav-utility .utility-links form input#searchsubmit:hover {
+  background-color: #5ebfb4;
+}
+
+/* .nav-main */
+.nav-main {
+  background-color: #fff;
+  clear: both;
+  margin-top: 1px;
+  min-height: 100px;
+}
+.nav-main .brand {
+  /*background-image: url("images/bwb-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+  font-size: 100px;
+  padding: 8px 0 12px 0;
+  text-indent: -9999px;*/
+  z-index: -999;
+}
+.nav-main .nav {
+  float: right;
+  margin: 40px 0 0 0;
+}
+.nav-main .nav li {
+  border-left: 1px solid #ddd;
+  padding: 0 16px;
+}
+@media (max-width: 979px) {
+  .nav-main .nav li {
+    border-left: none;
+  }
+}
+.nav-main .nav li.first {
+  border-left: none;
+}
+.nav-main .nav li.last {
+  padding-right: 0;
+}
+.nav-main .nav li a {
+  color: #5ebfb4;
+  font-size: 16px;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+.nav-main .nav li p {
+  font-size: 17px;
+  margin: 0;
+}
+.nav-main .nav li .brand-text {
+  color: #999;
+  font-size: 11px;
+}
+.nav-main .nav li a:hover {
+  color: #322b21;
+}
+.nav-main .nav .current_page_item,
+.nav-main .nav .current_page_item a {
+  color: #322b21;
+}
+.navbar .btn-navbar {
+  background-color: #abeae3;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* .page-header */
+.page-header {
+  border-bottom: none;
+}
+
+/* .sidebar */
+.sidebar .ad {
+  margin-bottom: 20px;
+}
+.sidebar .this-week .this-week-post {
+  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+  height: 200px;
+  position: relative;
+}
+.sidebar .this-week .this-week-post header {
+  background-color: rgba(255, 255, 255, 0.8);
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;	
+}
+.sidebar .this-week .this-week-post h4 {
+  font-size: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+/* .footer */
+.footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+  color: #777;
+  margin-top: 20px;
+  min-height: 200px;
+  padding-top: 20px;
+}
+.footer h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.footer p,
+.footer label {
+  font-size: 12px;
+}
+.footer img {
+  margin: 0 10px 20px 0;
+}
+.footer .social-media-links {
+  margin: 0 0 20px 0;	
+}
+.footer .social-media-links li,
+.footer .social-media-links li a {
+  float: left;
+  height: 32px;
+  list-style: none;
+  margin: 4px 4px 0 0;
+  width: 32px;
+}
+.footer #subscribe {
+  background-color: #8adcd3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  border: none;
+  -webkit-box-shadow: 0 4px 0 0 #5EBFB4;
+     -moz-box-shadow: 0 4px 0 0 #5ebfb4;
+          box-shadow: 0 4px 0 0 #5EBFB4;
+  color: white;
+  cursor: pointer;
+  font-family: "Droid Sans",Lucida Grande,Verdana,Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 18px;
+  padding: 4px 10px 4px;
+  text-align: center;
+  text-shadow: 0 -0.1em #5ebfb4;
+  vertical-align: middle;
+}
+.footer #subscribe:hover,
+.footer #subscribe:active,
+.footer #subscribe.active,
+.footer #subscribe.disabled,
+.footer #subscribe[disabled] {
+  background-color: #81d6cd;
+  *background-color: #81d6cd;
+}
+.footer #subscribe:hover {
+  color: #f7f7f7;
+  text-decoration: none;
+  background-color: #81d6cd;
+  *background-color: #81d6cd;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+  background-position: 0 -15px;
+  -webkit-box-shadow: 0 3px 0 0 #5ebfb4;
+     -moz-box-shadow: 0 3px 0 0 #5ebfb4;
+          box-shadow: 0 3px 0 0 #5ebfb4;
+}
+
+/* .content-buckets */
+.content-buckets .bucket {
+  border: 1px solid #ddd;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  height: 250px;
+  overflow: hidden;
+  padding: 20px;
+}
+.content-buckets .bucket h4 {
+  color: #999;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.content-buckets .bucket ul {
+  list-style: none;
+  margin: 0 0 20px 0;	
+}
+.content-buckets .bucket li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding-left: 0;
+}
+
+/* index.php */
+.new-post-flag {
+  background-color: #8adcd3;
+  -webkit-border-radius: 0 5px 5px 0;
+     -moz-border-radius: 0 5px 5px 0;
+          border-radius: 0 5px 5px 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 20px;
+  text-transform: uppercase;	
+}
+.feature-post .new-post-flag {
+  position: relative;
+  top: 50px;
+}
+.primary-feature-post,
+.secondary-feature-post,
+.tertiary-feature-post {
+  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+  position: relative;
+}
+.primary-feature header,
+.secondary-feature header {
+  background-color: rgba(255, 255, 255, 0.9);
+  background-position: center;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+}
+.primary-feature .title,
+.secondary-feature .title {
+  padding: 10px;
+}
+.primary-feature-post {
+  height: 500px;
+  margin-bottom: 20px;
+}
+.primary-feature h2 {
+  font-size: 24px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.secondary-feature h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.byline {
+  color: #999;
+  font-family: "Droid Serif",Georgia,Times New Roman,Times,serif;
+  font-style: italic;
+}
+.byline span {
+  color: #ddd;
+}
+.tertiary-feature .ad {
+  min-height: 210px;
+}
+.secondary-feature-post {
+  height: 240px;
+  margin-bottom: 20px;
+}
+.feature-post {
+  margin-bottom: 20px;	
+}
+.feature-post h3 {
+  font-weight: normal;	
+}
+.feature-post .feature-post-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.feature-post .byline {
+  font-size: 12px;
+}
+
+/* sub-blog styles */
+.page-template-fashion-php h1,
+.page-template-guide-php h1,
+.page-template-lifestyle-php h1 {
+  border-bottom: 1px solid #ddd;
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.post {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.post-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.post-image img,
+.entry-content img {
+  border: 10px solid #F9F9F9;
+  box-shadow: 0 1px 2px 2px #eee;
+  -webkit-box-shadow: 0 1px 2px 2px #eee;
+     -moz-box-shadow: 0 1px 2px 2px #eee;
+          box-shadow: 0 1px 2px 2px #eee;
+}
+.wp-caption-text {
+  color: #999;
+  font-size: 10px;
+  font-style: italic;
+}
+
+/* single.php */
+.share-buttons .buttons {
+  margin: 20px 0 20px 0;
+}
+.share-buttons .buttons li {
+  float: left;
+  list-style: none;	
+}
+.comments {
+  color: #777;	
+}
+.commentlist {
+  margin: 20px 0 20px 0; 	
+}
+.commentlist li {
+  border-top: 1px dashed #eee;
+  font-size: 12px;
+  list-style: none;	
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+.commentlist li.depth-1 {
+  border-top: none;	
+}
+.commentlist li .comment-meta {
+  margin-bottom: 10px;
+}
+.commentlist li .comment-meta a {
+  color: #999;
+  font-family: "Droid Serif",Georgia,Times New Roman,Times,serif;
+  font-style: italic;
+}
+.commentlist li p {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#respond {
+  background-color: #f7f7f7;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.comments label {
+  display: inline;	
+}
+.comments .required {
+  color: #d53654;	
+}
+.comments .comment-form-comment label {
+  display: block;	
+}
+.comments input {
+  display: block;
+  width: 60%;	
+}
+.comments #submit {
+  background-color: #8adcd3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  border: none;
+  -webkit-box-shadow: 0 4px 0 0 #5EBFB4;
+     -moz-box-shadow: 0 4px 0 0 #5ebfb4;
+          box-shadow: 0 4px 0 0 #5EBFB4;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Droid Sans",Lucida Grande,Verdana,Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0;
+  padding: 4px 10px 4px;
+  text-align: center;
+  text-shadow: 0 -0.1em #5ebfb4;
+  vertical-align: middle;
+  width: 130px;	
+}
+.comments #submit:hover,
+.comments #submit:active,
+.comments #submit.active,
+.comments #submit.disabled,
+.comments #submit[disabled] {
+  background-color: #81d6cd;
+  *background-color: #81d6cd;
+}
+.comments #submit:hover {
+  color: #f7f7f7;
+  text-decoration: none;
+  background-color: #81d6cd;
+  *background-color: #81d6cd;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+  background-position: 0 -15px;
+  -webkit-box-shadow: 0 3px 0 0 #5ebfb4;
+     -moz-box-shadow: 0 3px 0 0 #5ebfb4;
+          box-shadow: 0 3px 0 0 #5ebfb4;
+}
+.comments textarea {
+  width: 60%;	
+}
+
+/* guide.php */
+.brunch-filter {
+  background-color: #f7f7f7;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 20px;	
+}
+.brunch-filter h2 {
+  font-size: 20px;	
+}
+.brunch-filter .filter-labels,
+.brunch-filter .filter-selects {
+  float: left;	
+}
+.brunch-filter .filter-labels td,
+.brunch-filter .filter-selects td {
+  height: 50px;	
+}
+.brunch-filter .reset {
+  display: none;	
+}
+.brunch-filter .search {
+  background-color: #8adcd3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  border: none;
+  -webkit-box-shadow: 0 4px 0 0 #5EBFB4;
+     -moz-box-shadow: 0 4px 0 0 #5ebfb4;
+          box-shadow: 0 4px 0 0 #5EBFB4;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Droid Sans",Lucida Grande,Verdana,Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0;
+  padding: 4px 10px 4px;
+  text-align: center;
+  text-shadow: 0 -0.1em #5ebfb4;
+  vertical-align: middle;
+}
+.brunch-posts .brunch-data a {
+  color: #999;	
+}
